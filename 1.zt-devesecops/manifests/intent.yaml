@@ -1,0 +1,11 @@
+pipeline:
+  name: zero-trust-deployment
+
+stage:
+  name: deploy
+
+access:
+  resource: "s3://zt-devsecops-c23e242d8c01c05f03876fddbf"
+  actions:
+    - s3:GetObject
+    - s3:PutObject
